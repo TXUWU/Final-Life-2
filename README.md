@@ -20,6 +20,8 @@ res://
 <!--VSCode errors this (└──) to warn copy pasting lookalike characters (ignore)-->
 * Scenes/levels (.tscn) (create levels/ folder)
 
+-- insert trailer/video of game --
+
 ^ delete text
 
 Survival game where you're supposed to take damage and bounce back from it more powerfully, and steal moves from your adversaries and give them a taste of their own medicine!
