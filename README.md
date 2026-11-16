@@ -1,5 +1,5 @@
 <div align="center"> <!--deprecated but is the only way to center on Github markdown-->
-    <img alt="Final Life game logo" src="assets/TitleCard.png" width="300"> 
+	<img alt="Final Life game logo" src="assets/TitleCard.png" width="300"> 
 </div>
 <hr>
 
@@ -12,10 +12,10 @@ TODO:
 ```
 res://
 └── entities/
-    └── player/
-        ├── player.tscn       (Scene)
-        ├── player.gd         (Script)
-        └── player_sprite.png (Asset)
+	└── player/
+		├── player.tscn       (Scene)
+		├── player.gd         (Script)
+		└── player_sprite.png (Asset)
 ```
 <!--VSCode errors this (└──) to warn copy pasting lookalike characters (ignore)-->
 * Scenes/levels (.tscn) (create levels/ folder)
