@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyh00nyjng1sr"
-path="res://.godot/imported/TingSpriteSheet.png-7c78a4073b86457ba214651cc2ccdbd5.ctex"
+path="res://.godot/imported/TingSpriteSheet.png-95e649b405af940414b6b9764add6c2f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/TingSpriteSheet.png"
-dest_files=["res://.godot/imported/TingSpriteSheet.png-7c78a4073b86457ba214651cc2ccdbd5.ctex"]
+source_file="res://levels/level_1/TingSpriteSheet.png"
+dest_files=["res://.godot/imported/TingSpriteSheet.png-95e649b405af940414b6b9764add6c2f.ctex"]
 
 [params]
 
