@@ -19,6 +19,10 @@ res://
 ```
 <!--VSCode errors this (└──) to warn copy pasting lookalike characters (ignore)-->
 * Scenes/levels (.tscn) (create levels/ folder)
+* Add background tiles using TileMapLayer (named Background in level_1 scene) without stacking tiles
+* add camera follow player
+* adding main menu buttons texture
+* pause menu (to exit)
 
 -- insert trailer/video of game --
 
