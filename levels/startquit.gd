@@ -1,11 +1,10 @@
 extends Control
 
-func _ready() -> void:
-	$VBoxContainer/start.pressed.connect(_on_start_button_pressed)
-	$VBoxContainer/quit.pressed.connect(_on_quit_button_pressed)
-
-func _on_start_button_pressed() -> void:
+func _on_start_pressed() -> void:
+	print_debug("Start!")
 	get_tree().change_scene_to_file("res://levels/level_0.tscn") 
 
-func _on_quit_button_pressed() -> void:
+
+func _on_quit_pressed() -> void:
+	print_debug("Exit!")
 	get_tree().quit()
