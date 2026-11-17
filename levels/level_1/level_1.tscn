@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://i3o457pk3rwp"]
+
+[ext_resource type="PackedScene" uid="uid://bqqbvpwv6fkrt" path="res://player/player.tscn" id="1_vfa6b"]
+[ext_resource type="Texture2D" uid="uid://bi0j7spfwuu0y" path="res://assets/Groundtilemap.png" id="2_45440"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epb64"]
+texture = ExtResource("2_45440")
+margins = Vector2i(0, 1024)
+texture_region_size = Vector2i(3040, 3072)
+
+[sub_resource type="TileSet" id="TileSet_mcdv1"]
+sources/2 = SubResource("TileSetAtlasSource_epb64")
+
+[node name="level_1" type="Node2D" unique_id=1610643571]
+
+[node name="Player" parent="." unique_id=1279126052 instance=ExtResource("1_vfa6b")]
+
+[node name="Background" type="TileMapLayer" parent="." unique_id=882326163]
+tile_set = SubResource("TileSet_mcdv1")
