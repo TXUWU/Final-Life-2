@@ -20,9 +20,10 @@ res://
 <!--VSCode errors this (└──) to warn copy pasting lookalike characters (ignore)-->
 * Scenes/levels (.tscn) (create levels/ folder)
 * Add background tiles using TileMapLayer (named Background in level_1 scene) without stacking tiles
-* add camera follow player
+* add camera follow player (camera dampening)
 * adding main menu buttons texture
 * pause menu (to exit)
+* change movement to add priority to sideway looking sprite instead of using front/back sprite when moving diagonal
 
 -- insert trailer/video of game --
 
