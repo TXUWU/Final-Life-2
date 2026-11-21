@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://i3o457pk3rwp"]
 
+[ext_resource type="Script" uid="uid://bhg1w5iq601kl" path="res://levels/level_1/camera_2d.gd" id="1_5b03i"]
 [ext_resource type="PackedScene" uid="uid://bqqbvpwv6fkrt" path="res://player/player.tscn" id="1_vfa6b"]
 [ext_resource type="Texture2D" uid="uid://b6erf5vrrnyfu" path="res://levels/level_1/Groundtilemap.png" id="2_45440"]
 [ext_resource type="Texture2D" uid="uid://dphbhpbrsegiv" path="res://assets/InventorySprites.png" id="2_epb64"]
@@ -21,43 +22,44 @@ sources/2 = SubResource("TileSetAtlasSource_epb64")
 
 [node name="level_1" type="Node2D" unique_id=1610643571]
 
-[node name="Player" parent="." unique_id=1279126052 instance=ExtResource("1_vfa6b")]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=44046161 node_paths=PackedStringArray("target")]
+script = ExtResource("1_5b03i")
+target = NodePath("../Player")
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=44046161]
-position_smoothing_enabled = true
-
-[node name="Background" type="TileMapLayer" parent="." unique_id=882326163]
-scale = Vector2(0.2, 0.2)
-tile_set = SubResource("TileSet_mcdv1")
-
-[node name="Control" type="Control" parent="." unique_id=1093749494]
+[node name="Control" type="Control" parent="Camera2D" unique_id=1093749494]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="InventorySprites1" type="Sprite2D" parent="Control" unique_id=902852195]
+[node name="InventorySprites1" type="Sprite2D" parent="Camera2D/Control" unique_id=902852195]
 position = Vector2(-1, 276.00003)
 scale = Vector2(0.042968757, 0.042968757)
 texture = ExtResource("2_epb64")
 hframes = 3
 
-[node name="InventorySprites2" type="Sprite2D" parent="Control" unique_id=810437371]
+[node name="InventorySprites2" type="Sprite2D" parent="Camera2D/Control" unique_id=810437371]
 position = Vector2(208, 272)
 scale = Vector2(0.042968757, 0.042968757)
 texture = ExtResource("2_epb64")
 hframes = 3
 frame = 1
 
-[node name="InventorySprites3" type="Sprite2D" parent="Control" unique_id=1461683711]
+[node name="InventorySprites3" type="Sprite2D" parent="Camera2D/Control" unique_id=1461683711]
 position = Vector2(413, 272.00003)
 scale = Vector2(0.042968757, 0.042968757)
 texture = ExtResource("2_epb64")
 hframes = 3
 frame = 2
 
-[node name="HealthbarSprites" type="Sprite2D" parent="." unique_id=553615379]
+[node name="HealthbarSprites" type="Sprite2D" parent="Camera2D/Control" unique_id=553615379]
 position = Vector2(-341, 194.00002)
 scale = Vector2(0.17187497, 0.17187497)
 texture = ExtResource("4_iey7c")
 hframes = 10
+
+[node name="Player" parent="." unique_id=1279126052 instance=ExtResource("1_vfa6b")]
+
+[node name="Background" type="TileMapLayer" parent="." unique_id=882326163]
+scale = Vector2(0.2, 0.2)
+tile_set = SubResource("TileSet_mcdv1")
